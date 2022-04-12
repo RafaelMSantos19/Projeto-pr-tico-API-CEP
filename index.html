@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styli.css">
+    <title>API CEP</title>
+    
+</head>
+<body>
+    <div class="img">
+        <img src="./img/cep-mais.png" alt="">
+    </div>
+
+    <div class="input">
+        <label for="cep" >CEP:  </label>  <text id="resposta"> </text>  <br> <br>
+        <input type="text" id="cep"  required>
+        <br> <br>
+        <button id="bt">pesquisar</button>
+        <br>
+        <div id="loader"></div>
+        
+            
+    </div>
+
+    <div style="display:none;"  class="animate-bottom" id="card"  >
+                <div class="titulo">Endereço:   <text id="endereco"></text>  </div> 
+                <br>
+                <div class="titulo">Bairro:     <text id="bairro"></text>  </div> 
+                <br>
+                <div class="titulo">cidade:     <text id="cidade"></text>  </div> 
+                <br>
+                <div class="titulo">Estado:     <text id="estado"></text>  </div> 
+                <br>
+    </div>
+    <script src="./js/main.js" type='module' defer></script>
+</body>
+</html>
